@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>{{ phone.brand }} {{ phone.model }}</h1>
+  <ul>
+    {% for warranty in warranties %}
+      <li><a href="{% url 'warranty_detail' pk=warranty.pk %}">{{ warranty.start_date }} - {{ warranty.end_date }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

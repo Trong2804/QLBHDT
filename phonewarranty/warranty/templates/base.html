@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Phone Warranty</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="{% url 'phone_list' %}">Phone List</a></li>
+      </ul>
+    </nav>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+  </body>
+</html>

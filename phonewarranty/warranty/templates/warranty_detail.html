@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Warranty Detail</h1>
+  <p>Phone: {{ warranty.phone.brand }} {{ warranty.phone.model }}</p>
+  <p>Start Date: {{ warranty.start_date }}</p>
+  <p>End Date: {{ warranty.end_date }}</p>
+{% endblock %}
